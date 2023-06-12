@@ -20,6 +20,8 @@
 * Instructions to play: run ```./run.sh tutorials/synthesis/arcane.cpp```
 * In this demo, I wanted to find a better way to represent the song that wasn't repeatedly hard coding each note through calling the playNote function (which was not very DRY). I wanted to use JSON to represent the playNote function inputs and to be able to create music in a music notation program where I could simply drag and drop notes to where I wanted them to be (like Musescore). I found that after converting my Musescore piece to MIDI, I could convert the MIDI to JSON and use a C++ JSON interpreter to get the notes, along with all the associated information such as time, amplitude, and duration. In this way, I could use dynamics and staccato/legato without having to think about the explicit duration/amplitude of the note. For this piece, I chose the plucked string sound as I thought it lent a medieval atmosphere to the song, and a Square Wave sound for the melody as it had a haunting sort of sound. 
 
+![Markov Chain image](markov-chain.png "Markov Chain visualization")
+
 ## 4. "Breath of the Wild Main Theme" - Legends of Zelda: Breath of the Wild Soundtrack
 * Transcription from Scarred Wolf on Musescore; the song is from the soundtrack of the video game "Legends of Zelda: Breath of the Wild"
 * [Link to repo](https://github.com/allolib-s23/demo1-christinetu15/blob/main/tutorials/synthesis/botw.cpp)
